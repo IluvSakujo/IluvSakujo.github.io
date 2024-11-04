@@ -1,1 +1,78 @@
-...
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div>
+Header
+</div>
+
+<div>
+ <button onclick="showit('divvy1')">Div1 </button>
+ <button onclick="showit('divvy2')">Div2 </button>
+ <button onclick="showit('divvy3')">Div3 </button>
+ <button onclick="showit('divvy4')">Div4 </button>
+</div>
+
+<div id="divvy1" style="display:block">
+ <div class="box red">
+ 
+ <div id="mydivid1"class='mydivclass1'>
+Welcome to my website
+</div>
+
+<div id='mydivid1'class='mydivclass2'>
+My name is Demetruis 
+</div>
+ 
+ 
+  </div>
+ </div>
+
+
+<div id='divvy2' style="display:none">
+ <div class="box blue">
+ <div>
+          <input type="checkbox">
+<label for="vehicle1"> Apple Candle</label>
+<input type="checkbox">
+<label for="vehicle1"> Fall Candle</label>
+<input type="checkbox">
+<label for="vehicle1"> Ps4</label>
+<input type="checkbox">
+<label for="vehicle1"> Xbox</label>
+ 
+ </div>
+ </div>
+ </div>
+
+<div id='divvy3' style="display:none">
+ <div class="box yellow">
+ <div> <select name"cars" id="cars" onchange="selectChange()">
+<option vaule="v">Volovo</option>  
+<option vaule="s">Salt</option>  
+<option vaule="m">Milk</option>  
+<option vaule="a">Apple</option>  
+ </select>
+ </div>
+ </div>
+</div>
+
+<div id='divvy4' style="display:none">
+ <div class="box green">
+      
+      
+      
+        <div id='div1'class="myclass" style="font-size:100px" onclick="changeme()">HELLO!
+        </div>
+      
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

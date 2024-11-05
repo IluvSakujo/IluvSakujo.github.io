@@ -1,3 +1,11 @@
+function clicked1() {
+  var1 = document.getElementsByName("test")[0].checked
+  var2 = document.getElementsByName("test")[1].checked
+
+  document.getElementById("showit1").textContent = var1
+  document.getElementById("showit2").textContent = var2
+}
+
 function showit(var1){
 document.getElementById("divvy1").style.display='none'
 document.getElementById("divvy2").style.display='none'

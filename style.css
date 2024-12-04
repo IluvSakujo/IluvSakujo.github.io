@@ -1,21 +1,20 @@
 html{
-  height: 100%;
+  height:100%;
+  width: 100%;
+  
+  
 }
-
 body{
   height:100%;
-  margin:0;
+  margin: 0;
+}
+div{
+ margin:px;
 }
 
-.BK{
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(gray, white);
-}
-
-.head {
+.header{
   height: 25px;
-  width: 225px;
+  width: 160px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -24,11 +23,50 @@ body{
   border: solid 3px;
 }
 
+.button{
+  width: 90px;
+  background-color: white;
+  Color: black;
+  transition: .5s;
+}
+
+.button:hover {
+  width: 90px;
+  background-color: grey;
+  Color: white;
+}
+
+
+.box{
+  height: 100%;
+  width: 100%;
+  border: solid 3px black;
+  
+}
+
+
+.red{
+  background-image: linear-gradient(to bottom, skyblue, white);
+}
+
+.blue{
+  background-image: linear-gradient(to bottom, lightyellow, white);
+}
+.yellow{
+ background-image: linear-gradient(to bottom, orange, white);
+}
+.green{
+ background-image: linear-gradient(to bottom, brown, white);
+}
+.purple{
+ background-image: linear-gradient(to bottom, blue, white);
+}
+
 .boxholder{
   display: flex;
 }
 
-.box{
+.boxers{
   flex: 1;
   height: 300px;
   min-width: 200px;
@@ -36,12 +74,24 @@ body{
   margin-left: 5%;
   border: solid 3px;
 }
-.flexdiv{
+
+.homeboxers{
+  flex: 1;
+  height: 300px;
+  min-width: 200px;
+  max-width: 300px;
+  margin-left: 5%;
+  border: solid 3px;.pic{
+  width: 100%;
+  height: 100%;
+}
+}
+.flexdiver{
   display: flex;
   flex-direction: column;
 }
 
-.box2{
+.box2ers{
   flex: 2;
   height: 100px;
   min-width: 200px;
@@ -51,7 +101,7 @@ body{
 }
 
 
-.box3{
+.box3ers{
   flex: 2;
   height: 100px;
   min-width: 200px;
@@ -59,7 +109,7 @@ body{
   margin-left: 5%;
   border: solid 3px;
 }
-.box4{
+.box4ers{
   flex: 2;
   height: 100px;
   min-width: 200px;
@@ -67,4 +117,19 @@ body{
   margin-left: 5%;
   border: solid 3px;
   margin-top: 5%;
+}
+
+
+.loading{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom,yellow,white);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to{
+    transform: rotate(360deg)
+  }
 }
